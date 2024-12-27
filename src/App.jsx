@@ -7,7 +7,30 @@ import third from "./gallery-s-3.webp";
 import fourth from "./gallery-s-5.webp";
 import fifth from "./gallery-s-4.png";
 
-export default function app() {
+export default function App() {
+  const boxes = [
+    [
+      {
+        icon: "iconify1",
+        title: "this is title two",
+      },
+
+      {
+        icon: "iconify3",
+        title: "this is title three",
+      },
+
+      {
+        icon: "iconify4",
+        title: "this is title four",
+      },
+
+      {
+        icon: "iconify5",
+        title: "this is title five",
+      },
+    ],
+  ];
   return (
     <div className="mx-0 my-0">
       <div className="bg-[#092837] py-8">
@@ -741,7 +764,7 @@ export default function app() {
 
           <div className="border bg-[#ffffff] p-2 rounded-2xl flex flex-col items-center gap-2">
             <svg
-            className="text-black hover:text-blue-700 cursor-pointer"
+              className="text-black hover:text-blue-700 cursor-pointer"
               xmlns="http://www.w3.org/2000/svg"
               width="80"
               height="80"
@@ -770,6 +793,15 @@ export default function app() {
           </p>
         </div>
       </div>
+
+        {boxes.map((box) => (
+          <div
+            className="bg-white shadow-2xl p-6 rounded-xl text-red-400"
+          >
+            {box.icon}
+            <p className="text-2xl text-green-500">{box.title} </p>
+          </div>
+        ))}
     </div>
   );
 }
