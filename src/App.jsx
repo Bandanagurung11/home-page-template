@@ -8,29 +8,6 @@ import fourth from "./gallery-s-5.webp";
 import fifth from "./gallery-s-4.png";
 
 export default function App() {
-  const boxes = [
-    [
-      {
-        icon: "iconify1",
-        title: "this is title two",
-      },
-
-      {
-        icon: "iconify3",
-        title: "this is title three",
-      },
-
-      {
-        icon: "iconify4",
-        title: "this is title four",
-      },
-
-      {
-        icon: "iconify5",
-        title: "this is title five",
-      },
-    ],
-  ];
   return (
     <div className="mx-0 my-0">
       <div className="bg-[#092837] py-8">
@@ -782,26 +759,24 @@ export default function App() {
 
       {/* third section */}
       <div className="bg-white">
-        <div className="pt-16 flex flex-col gap-6 w-7/12 m-auto">
-          <p className="text-5xl">
+        <div className="py-16">
+
+          <div className="w-7/12 mx-auto">
+          <p className="text-5xl text-center gap-6 ">
             An extensive selection of 12+ ready-made Business websites.
           </p>
-          <p>
+          <p className="text-center mt-6 opacity-70">
             Best-in-class designs to get started. Install any demo or template
             with a single click. Mix and match section templates to create
             unique sites.
           </p>
+          </div>
+
+
         </div>
       </div>
 
-        {boxes.map((box) => (
-          <div
-            className="bg-white shadow-2xl p-6 rounded-xl text-red-400"
-          >
-            {box.icon}
-            <p className="text-2xl text-green-500">{box.title} </p>
-          </div>
-        ))}
+       
     </div>
   );
 }
