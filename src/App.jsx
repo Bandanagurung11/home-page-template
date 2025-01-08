@@ -6,6 +6,18 @@ import second from "./gallery-s-2.webp";
 import third from "./gallery-s-3.webp";
 import fourth from "./gallery-s-5.webp";
 import fifth from "./gallery-s-4.png";
+import agencey from "./assets/images/agencey.webp";
+import bank from "./assets/images/bank.webp";
+import business from "./assets/images/business.webp";
+import corporate from "./assets/images/corporate.webp";
+import financial from "./assets/images/financial.webp";
+import human from "./assets/images/human.webp";
+import insurance from "./assets/images/insurence.webp";
+import it from "./assets/images/it.webp";
+import management from "./assets/images/management.webp";
+import marketing from "./assets/images/marketing.webp";
+import tax from "./assets/images/tax.webp";
+import travel from "./assets/images/travel.webp";
 
 export default function App() {
   return (
@@ -770,6 +782,21 @@ export default function App() {
             with a single click. Mix and match section templates to create
             unique sites.
           </p>
+          </div>
+
+          <div className=" w-10/12 mx-auto grid grid-cols-3 gap-12">
+            <img src={agencey} alt="" />
+            <img src={it} alt="" />
+            <img src={human} alt="" />
+            <img src={financial} alt="" />
+            <img src={business} alt="" />
+            <img src={corporate} alt="" />
+            <img src={marketing} alt="" />
+            <img src={bank} alt="" />
+            <img src={management} alt="" />
+            <img src={travel} alt="" />
+            <img src={tax} alt="" />
+            <img src={insurance} alt="" />
           </div>
 
 
