@@ -784,28 +784,62 @@ export default function App() {
           </p>
           </div>
 
-          <div className=" w-10/12 mx-auto grid grid-cols-3 gap-12">
+          <div className=" w-10/12 mx-auto grid grid-cols-3 gap-12 mt-24">
+            <div>
             <img src={agencey} alt="" />
+            <p>Consulting agencey</p>
+            </div>
+            <div>
             <img src={it} alt="" />
+            <p>it Consulting</p>
+            </div>
+            <div>
             <img src={human} alt="" />
+            <p>HR Consulting</p>
+            </div>
+            <div>
             <img src={financial} alt="" />
+            <p>Financial Advisor</p>
+            </div>
+            <div>
             <img src={business} alt="" />
+            <p>Business Consultant</p>
+            </div>
+            <div>
             <img src={corporate} alt="" />
+            <p>corporate Consultanting</p>
+            </div>
+            <div>
             <img src={marketing} alt="" />
+            <p>Marketing Consultant</p>
+            </div>
+            <div>
             <img src={bank} alt="" />
+            <p>Banking Consultancy</p>
+            </div>
+            <div>
             <img src={management} alt="" />
+            <p>Management Consulting</p>
+            </div>
+            <div>
             <img src={travel} alt="" />
-            <img src={tax} alt="" />
-            <img src={insurance} alt="" />
+            <p>Travel Consultancy</p>
+            </div>
+            <div>
+              <img src={tax} alt="" />
+            </div>
+            
+            <div><img src={insurance} alt="" /></div>
           </div>
 
 
+          <div className="flex items-center justify-center">
+          <button className="bg-cyan-400 text-black font-bold p-4 rounded-full mt-24 ">Purchase now</button>
+          </div>
+
+ 
         </div>
       </div>
-      <p>lorem 20
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta odio enim optio nesciunt quos natus eum voluptates incidunt, dolorem consequuntur!
-
-      </p>
 
        
     </div>
